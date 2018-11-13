@@ -1,0 +1,10 @@
+<?php 
+	Route::get('','AdminController@index')->name('HomeAdmin');
+	Route::get('/category','CategoryController@index')->name('category');
+	Route::post('/category','CategoryController@postCategory')->name('addCategory');
+	Route::get('/category/search','CategoryController@search')->name('search');
+	Route::get('/category/delete/{id}','CategoryController@deleteCategory')->name('deleteCategory');
+	Route::get('/category/edit/{id}','CategoryController@editCategory')->name('editCategory');
+	Route::post('/category/edit/{id}','CategoryController@postedit')->name('editCategory');
+	Route::post('/category/update-cate/{id}','CategoryController@updateCate')->name('update-cate');
+?>
